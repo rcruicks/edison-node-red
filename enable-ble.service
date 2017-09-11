@@ -1,0 +1,7 @@
+[Unit]
+Description = Enable BLE at startup
+After = network.service
+[Service]
+ExecStart=/bin/bash /home/root/enable-ble.sh
+[Install]
+WantedBy = multi-user.target
